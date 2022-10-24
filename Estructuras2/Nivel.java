@@ -1,0 +1,36 @@
+/*
+Name: Nivel
+Description: Eleg|ir un nivel y dar su descripcion.
+Author: Sergio Fernando alarcon Ruiz|
+*/
+
+import 	java.util.Scanner;
+class Nivel {	
+	public static void main (String[] args){
+		Scanner teclado = new
+		Scanner(System.in);
+		char nivel;
+		String mensaje = "";
+		
+		
+	System.out.println("Elige un nivel del 1 al 3");
+	nivel = teclado.next().charAt(0);
+	
+	switch(nivel){
+		case '1':
+			mensaje = "Principiante";
+			break;
+		case '2':
+			mensaje = "Medio";
+			break;
+		case '3':
+			mensaje = "Avanzado";
+			break;
+		default:
+			mensaje = "Error";
+			break;
+	}
+	
+	System.out.println(mensaje);
+	}
+}
